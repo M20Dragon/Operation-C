@@ -1,26 +1,127 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GameView" id="BV1-FR-VrT" customClass="GameViewController" customModule="Operation__C" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
                         <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
                     </layoutGuides>
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ta7-nF-1yE">
+                                <rect key="frame" x="39" y="257" width="336" height="145"/>
+                                <state key="normal" image="Big Retry Button"/>
+                                <connections>
+                                    <action selector="restart:" destination="BV1-FR-VrT" eventType="touchUpInside" id="iK5-aB-YOj"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OCLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9it-xo-fI3">
+                                <rect key="frame" x="20" y="58" width="374" height="149"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgi-oG-UhK">
+                                <rect key="frame" x="39" y="484" width="336" height="96"/>
+                                <state key="normal" image="Big Quit Button"/>
+                                <connections>
+                                    <action selector="quitGame:" destination="BV1-FR-VrT" eventType="touchUpInside" id="vnC-BW-wxA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMe-vB-hCz">
+                                <rect key="frame" x="19" y="257" width="376" height="146"/>
+                                <state key="normal" image="PlayButton"/>
+                                <connections>
+                                    <action selector="start:" destination="BV1-FR-VrT" eventType="touchUpInside" id="rvS-90-rTd"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQz-rB-Nd7">
+                                <rect key="frame" x="39" y="483" width="336" height="97"/>
+                                <state key="normal" image="RateButton"/>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dE-en-d8H">
+                                <rect key="frame" x="35" y="257" width="340" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEU-8I-Nfb">
+                                <rect key="frame" x="39" y="307" width="336" height="96"/>
+                                <state key="normal" image="Big Resume Button"/>
+                                <connections>
+                                    <action selector="hideOptionMenu:" destination="BV1-FR-VrT" eventType="touchUpInside" id="LbG-dd-CjE"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qc9-mu-oGQ">
+                                <rect key="frame" x="7" y="44" width="34" height="34"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" image="PauseButton"/>
+                                <connections>
+                                    <action selector="showOptionMenu:" destination="BV1-FR-VrT" eventType="touchUpInside" id="ZOr-ej-22h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26651781325186358" green="0.23241604987925918" blue="0.40636304368827547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="fEU-8I-Nfb" firstAttribute="top" secondItem="9it-xo-fI3" secondAttribute="bottom" constant="100" id="029-mU-kep"/>
+                            <constraint firstItem="fEU-8I-Nfb" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="19" id="2iG-bU-uDR"/>
+                            <constraint firstItem="9it-xo-fI3" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="38" id="915-sL-aCX"/>
+                            <constraint firstItem="qMe-vB-hCz" firstAttribute="top" secondItem="9it-xo-fI3" secondAttribute="bottom" constant="50" id="A4u-Tv-Qhn"/>
+                            <constraint firstItem="fEU-8I-Nfb" firstAttribute="top" secondItem="3dE-en-d8H" secondAttribute="bottom" constant="50" id="Adg-O3-sq8"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="DQz-rB-Nd7" secondAttribute="bottom" constant="156" id="DL5-Gs-dN3"/>
+                            <constraint firstItem="Ta7-nF-1yE" firstAttribute="top" secondItem="9it-xo-fI3" secondAttribute="bottom" constant="50" id="G39-HS-QJy"/>
+                            <constraint firstAttribute="trailing" secondItem="qMe-vB-hCz" secondAttribute="trailing" constant="19" id="Gn5-gD-Qyf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DQz-rB-Nd7" secondAttribute="trailing" constant="19" id="JfA-HN-uMa"/>
+                            <constraint firstItem="jgi-oG-UhK" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="19" id="Jtu-9O-31U"/>
+                            <constraint firstItem="9it-xo-fI3" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" id="MuI-ft-gFf"/>
+                            <constraint firstItem="jgi-oG-UhK" firstAttribute="top" secondItem="fEU-8I-Nfb" secondAttribute="bottom" constant="80" id="ObD-10-pXB"/>
+                            <constraint firstItem="jgi-oG-UhK" firstAttribute="top" secondItem="fEU-8I-Nfb" secondAttribute="bottom" constant="81" id="PRG-KN-lKJ"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="jgi-oG-UhK" secondAttribute="bottom" constant="156" id="QX4-jI-bq6"/>
+                            <constraint firstItem="jgi-oG-UhK" firstAttribute="top" secondItem="qMe-vB-hCz" secondAttribute="bottom" constant="81" id="Riy-oA-GMe"/>
+                            <constraint firstItem="DQz-rB-Nd7" firstAttribute="top" secondItem="fEU-8I-Nfb" secondAttribute="bottom" constant="80" id="Vh2-Lq-flC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fEU-8I-Nfb" secondAttribute="trailing" constant="19" id="Wdo-xg-sPA"/>
+                            <constraint firstItem="Ta7-nF-1yE" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="19" id="a3L-6z-TaP"/>
+                            <constraint firstItem="DQz-rB-Nd7" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="19" id="cNS-Ne-vz3"/>
+                            <constraint firstItem="qMe-vB-hCz" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" constant="19" id="iXv-at-rnR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jgi-oG-UhK" secondAttribute="trailing" constant="19" id="p4f-Tp-HUh"/>
+                            <constraint firstItem="DQz-rB-Nd7" firstAttribute="top" secondItem="Ta7-nF-1yE" secondAttribute="bottom" constant="81" id="pBI-HC-FO5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ta7-nF-1yE" secondAttribute="trailing" constant="19" id="twt-6Y-dna"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9it-xo-fI3" secondAttribute="trailing" id="xAt-Yz-hW3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="finalScoreLabel" destination="3dE-en-d8H" id="IUc-H5-apU"/>
+                        <outlet property="ocLogo" destination="9it-xo-fI3" id="fky-lP-9zS"/>
+                        <outlet property="pauseButton" destination="qc9-mu-oGQ" id="Sov-WI-pSV"/>
+                        <outlet property="playButton" destination="qMe-vB-hCz" id="dqN-lq-LpB"/>
+                        <outlet property="quitButton" destination="jgi-oG-UhK" id="lnn-VM-mJZ"/>
+                        <outlet property="rateButton" destination="DQz-rB-Nd7" id="0Qw-Kr-DbQ"/>
+                        <outlet property="resumeButton" destination="fEU-8I-Nfb" id="Wgx-Bd-WNx"/>
+                        <outlet property="retryButton" destination="Ta7-nF-1yE" id="LUf-J7-sj7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="194" y="2"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Big Quit Button" width="372" height="96"/>
+        <image name="Big Resume Button" width="372" height="96"/>
+        <image name="Big Retry Button" width="372" height="96"/>
+        <image name="OCLogo" width="512" height="149"/>
+        <image name="PauseButton" width="158" height="158"/>
+        <image name="PlayButton" width="315" height="96"/>
+        <image name="RateButton" width="315" height="96"/>
+    </resources>
 </document>

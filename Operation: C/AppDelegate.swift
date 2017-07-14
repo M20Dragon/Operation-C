@@ -6,6 +6,23 @@
 //  Copyright © 2017 Timur Guler. All rights reserved.
 //
 
+
+
+/*
+    MAIN CHECKLIST
+ 
+    Create view \
+    Add ship and score/shield labels \
+    Add functionality to score and shield \
+    Add movement to ship \
+    Initialize obstacle borders \
+    put in obstacles \
+    Game Ambiance
+    Music
+ */
+
+
+
 import UIKit
 
 @UIApplicationMain

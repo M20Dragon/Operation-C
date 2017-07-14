@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0A308C1EE8222900E052A7 /* LeftObstacleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A308B1EE8222900E052A7 /* LeftObstacleObject.swift */; };
+		4E0A308E1EE8B05F00E052A7 /* RightObstacleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0A308D1EE8B05F00E052A7 /* RightObstacleObject.swift */; };
+		4E905A8C1EEA4CB000881E61 /* TestRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E905A8B1EEA4CB000881E61 /* TestRect.swift */; };
+		4E9EAC931F0FC1890051A326 /* ObstacleObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9EAC921F0FC1890051A326 /* ObstacleObject.swift */; };
+		4EC1F41C1EE36FDA00E25982 /* ControlSurface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC1F41B1EE36FDA00E25982 /* ControlSurface.swift */; };
 		4EE0E9631ED8FE2F00023501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0E9621ED8FE2F00023501 /* AppDelegate.swift */; };
-		4EE0E9651ED8FE2F00023501 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4EE0E9641ED8FE2F00023501 /* GameScene.sks */; };
 		4EE0E9671ED8FE2F00023501 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4EE0E9661ED8FE2F00023501 /* Actions.sks */; };
-		4EE0E9691ED8FE2F00023501 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0E9681ED8FE2F00023501 /* GameScene.swift */; };
+		4EE0E9691ED8FE2F00023501 /* LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0E9681ED8FE2F00023501 /* LevelScene.swift */; };
 		4EE0E96B1ED8FE2F00023501 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0E96A1ED8FE2F00023501 /* GameViewController.swift */; };
 		4EE0E96E1ED8FE2F00023501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EE0E96C1ED8FE2F00023501 /* Main.storyboard */; };
 		4EE0E9701ED8FE2F00023501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EE0E96F1ED8FE2F00023501 /* Assets.xcassets */; };
 		4EE0E9731ED8FE2F00023501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EE0E9711ED8FE2F00023501 /* LaunchScreen.storyboard */; };
 		4EE0E97E1ED8FE2F00023501 /* Operation__CTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0E97D1ED8FE2F00023501 /* Operation__CTests.swift */; };
 		4EE0E9891ED8FE2F00023501 /* Operation__CUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0E9881ED8FE2F00023501 /* Operation__CUITests.swift */; };
+		4EEE45371F071A0A004AFA4A /* iPadLevelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 4EEE45361F071A0A004AFA4A /* iPadLevelScene.sks */; };
+		4EEE45391F073968004AFA4A /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE45381F073968004AFA4A /* UIDevice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E0A308B1EE8222900E052A7 /* LeftObstacleObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftObstacleObject.swift; sourceTree = "<group>"; };
+		4E0A308D1EE8B05F00E052A7 /* RightObstacleObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightObstacleObject.swift; sourceTree = "<group>"; };
+		4E1333641F13F4AF0054EEF0 /* LevelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelScene.sks; sourceTree = "<group>"; };
+		4E905A8B1EEA4CB000881E61 /* TestRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRect.swift; sourceTree = "<group>"; };
+		4E9EAC921F0FC1890051A326 /* ObstacleObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObstacleObject.swift; path = ../ObstacleObject.swift; sourceTree = "<group>"; };
+		4EC1F41B1EE36FDA00E25982 /* ControlSurface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlSurface.swift; sourceTree = "<group>"; };
 		4EE0E95F1ED8FE2F00023501 /* Operation: C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Operation: C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE0E9621ED8FE2F00023501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4EE0E9641ED8FE2F00023501 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		4EE0E9661ED8FE2F00023501 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		4EE0E9681ED8FE2F00023501 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		4EE0E9681ED8FE2F00023501 /* LevelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelScene.swift; sourceTree = "<group>"; };
 		4EE0E96A1ED8FE2F00023501 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		4EE0E96D1ED8FE2F00023501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EE0E96F1ED8FE2F00023501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +64,8 @@
 		4EE0E9841ED8FE2F00023501 /* Operation: CUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Operation: CUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE0E9881ED8FE2F00023501 /* Operation__CUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation__CUITests.swift; sourceTree = "<group>"; };
 		4EE0E98A1ED8FE2F00023501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EEE45361F071A0A004AFA4A /* iPadLevelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = iPadLevelScene.sks; sourceTree = "<group>"; };
+		4EEE45381F073968004AFA4A /* UIDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +117,17 @@
 			isa = PBXGroup;
 			children = (
 				4EE0E9621ED8FE2F00023501 /* AppDelegate.swift */,
-				4EE0E9641ED8FE2F00023501 /* GameScene.sks */,
+				4E1333641F13F4AF0054EEF0 /* LevelScene.sks */,
+				4EEE45361F071A0A004AFA4A /* iPadLevelScene.sks */,
 				4EE0E9661ED8FE2F00023501 /* Actions.sks */,
-				4EE0E9681ED8FE2F00023501 /* GameScene.swift */,
 				4EE0E96A1ED8FE2F00023501 /* GameViewController.swift */,
+				4EE0E9681ED8FE2F00023501 /* LevelScene.swift */,
+				4EEE45381F073968004AFA4A /* UIDevice.swift */,
+				4EC1F41B1EE36FDA00E25982 /* ControlSurface.swift */,
+				4E0A308B1EE8222900E052A7 /* LeftObstacleObject.swift */,
+				4E9EAC921F0FC1890051A326 /* ObstacleObject.swift */,
+				4E0A308D1EE8B05F00E052A7 /* RightObstacleObject.swift */,
+				4E905A8B1EEA4CB000881E61 /* TestRect.swift */,
 				4EE0E96C1ED8FE2F00023501 /* Main.storyboard */,
 				4EE0E96F1ED8FE2F00023501 /* Assets.xcassets */,
 				4EE0E9711ED8FE2F00023501 /* LaunchScreen.storyboard */,
@@ -245,7 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EE0E96E1ED8FE2F00023501 /* Main.storyboard in Resources */,
-				4EE0E9651ED8FE2F00023501 /* GameScene.sks in Resources */,
+				4EEE45371F071A0A004AFA4A /* iPadLevelScene.sks in Resources */,
 				4EE0E9701ED8FE2F00023501 /* Assets.xcassets in Resources */,
 				4EE0E9731ED8FE2F00023501 /* LaunchScreen.storyboard in Resources */,
 				4EE0E9671ED8FE2F00023501 /* Actions.sks in Resources */,
@@ -273,9 +293,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EE0E9691ED8FE2F00023501 /* GameScene.swift in Sources */,
+				4EE0E9691ED8FE2F00023501 /* LevelScene.swift in Sources */,
 				4EE0E96B1ED8FE2F00023501 /* GameViewController.swift in Sources */,
+				4E0A308C1EE8222900E052A7 /* LeftObstacleObject.swift in Sources */,
+				4EC1F41C1EE36FDA00E25982 /* ControlSurface.swift in Sources */,
+				4E905A8C1EEA4CB000881E61 /* TestRect.swift in Sources */,
+				4E9EAC931F0FC1890051A326 /* ObstacleObject.swift in Sources */,
 				4EE0E9631ED8FE2F00023501 /* AppDelegate.swift in Sources */,
+				4E0A308E1EE8B05F00E052A7 /* RightObstacleObject.swift in Sources */,
+				4EEE45391F073968004AFA4A /* UIDevice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,10 +457,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3SJR6J7E74;
 				INFOPLIST_FILE = "Operation: C/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Wav-Technologies.Operation--C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -444,10 +472,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3SJR6J7E74;
 				INFOPLIST_FILE = "Operation: C/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Wav-Technologies.Operation--C";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -528,6 +558,7 @@
 				4EE0E98F1ED8FE2F00023501 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EE0E9901ED8FE2F00023501 /* Build configuration list for PBXNativeTarget "Operation: CTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +567,7 @@
 				4EE0E9921ED8FE2F00023501 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EE0E9931ED8FE2F00023501 /* Build configuration list for PBXNativeTarget "Operation: CUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +576,7 @@
 				4EE0E9951ED8FE2F00023501 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
